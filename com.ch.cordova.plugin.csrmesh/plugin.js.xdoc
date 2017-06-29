@@ -1,0 +1,159 @@
+/**
+	@name com.ch.cordova.plugin.CSRmesh
+	@class 
+ 	@description 蓝牙插件
+ 	@model Native
+ 	@category plugin
+ 	@declareVar ble
+*/
+
+/**
+	@name cordova-plugin-ble-central.scan
+	@function
+	@param {String} services 服务清单，为[]时查找所有设备
+	@param {String} seconds 扫描时长，单位s
+	@param {Function} success 请求成功的回调函数 
+	@param {Function} failure 请求失败的回调函数
+	@return {void}
+	@description 扫描蓝牙外设
+*/
+
+/**
+	@name cordova-plugin-ble-central.startScan
+	@function
+	@param {Array} services 服务清单，为空时查找所有设备
+	@param {Function} success 请求成功的回调
+	@param {Function} failure 可选参数  请求失败的回调
+	@return {void}
+	@description 开始扫描蓝牙外设
+*/
+
+/**
+	@name cordova-plugin-ble-central.stopScan
+	@function
+	@param {Function} success 请求成功的回调
+	@param {Function} failure 可选参数  请求失败的回调
+	@return {void}
+	@description 结束扫描蓝牙外设
+*/
+
+/**
+	@name cordova-plugin-ble-central.connect
+	@function
+	@param {String} device_id uuid或mac地址
+	@param {Function} success 请求成功的回调
+	@param {Function} failure 可选参数  请求失败的回调 
+	@return {void}
+	@description 外设与当前设备连接
+*/
+
+/**
+	@name cordova-plugin-ble-central.disconnect
+	@function
+	@param {String} device_id uuid或mac地址
+	@param {Function} success 请求成功的回调
+	@param {Function} failure 可选参数  请求失败的回调
+	@return {void}
+	@description 断开连接
+*/
+
+/**
+	@name cordova-plugin-ble-central.read
+	@function
+	@param {String} device_id uuid或mac地址
+	@param {String} service_uuid 外设服务的uuid
+	@param {String} characteristic_uuid 特征信息的uuid
+	@param {Function} success 请求成功的回调
+	@param {Function} failure 可选参数  请求失败的回调 
+	@return {void}
+	@description 读取特征信息
+*/
+
+/**
+	@name cordova-plugin-ble-central.write
+	@function
+	@param {String} device_id uuid或mac地址
+	@param {String} service_uuid 外设服务的uuid
+	@param {String} characteristic_uuid 特征的uuid
+	@param {String} value 二进制数据
+	@param {Function} success 可选参数  请求成功的回调
+	@param {Function} failure 可选参数  请求失败的回调
+	@return {void}
+	@description 写入到特征
+*/
+
+/**
+	@name cordova-plugin-ble-central.writeWithoutResponse
+	@function
+	@param {String} device_id uuid或mac地址
+	@param {String} service_uuid 外设服务的uuid
+	@param {String} characteristic_uuid 特征的uuid
+	@param {String} value 二进制数据
+	@param {Function} success 可选参数  请求成功的回调
+	@param {Function} failure 可选参数  请求失败的回调 
+	@return {void}
+	@description 将数据写入一个特征，而不需从外围设备确认
+*/
+
+/**
+	@name cordova-plugin-ble-central.startNotification
+	@function
+	@param {String} device_id uuid或mac地址
+	@param {String} service_uuid 外设服务的uuid
+	@param {String} characteristic_uuid 特征的uuid
+	@param {Function} success 可选参数  请求成功的回调
+	@param {Function} failure 可选参数  请求失败的回调
+	@return {void}
+	@description 特征值更改时，通知注册
+*/
+
+/**
+	@name cordova-plugin-ble-central.stopNotification
+	@function
+	@param {String} device_id uuid或mac地址
+	@param {String} service_uuid 外设服务的uuid
+	@param {String} characteristic_uuid 特征的uuid
+	@param {Function} success 可选参数  请求成功的回调
+	@param {Function} failure 可选参数  请求失败的回调
+	@return {void}
+	@description 特征值更改时，不通知注册
+*/
+
+/**
+	@name cordova-plugin-ble-central.isConnected
+	@function
+	@param {String} device_id uuid或mac地址
+	@param {String} service_uuid 外设服务的uuid
+	@param {String} characteristic_uuid 特征的uuid
+	@param {Function} success 可选参数  请求成功的回调
+	@param {Function} failure 可选参数  请求失败的回调 
+	@return {void}
+	@description 判断是否连接
+*/
+
+/**
+	@name cordova-plugin-ble-central.isEnabled
+	@function
+	@param {Function} success 可选参数  蓝牙开启状态的回调
+	@param {Function} failure 可选参数  蓝牙关闭状态的回调
+	@return {void}
+	@description 判断蓝牙是否可用
+*/
+
+/**
+	@name cordova-plugin-ble-central.enable
+	@function
+	@param {Function} success 可选参数  请求成功的回调
+	@param {Function} failure 可选参数  请求失败的回调
+	@return {void}
+	@description 在设备上启动蓝牙
+*/
+
+/**
+	@name cordova-plugin-ble-central.showBluetoothSettings
+	@function
+	@param {Function} success 可选参数  请求成功的回调
+	@param {Function} failure 可选参数  请求失败的回调 
+	@return {void}
+	@description 显示蓝牙设置
+*/
